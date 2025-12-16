@@ -1,0 +1,41 @@
+{
+  "name": "nest-nextjs-app",
+  "version": "0.0.1",
+  "private": true,
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "--- api ---": "",
+    "dev:api": "pnpm --filter api start:dev",
+    "start:api": "pnpm --filter api start",
+    "build:api": "pnpm --filter api build",
+    "lint:api": "pnpm --filter api lint",
+    "test:api": "pnpm --filter api test",
+    "test:api:e2e": "pnpm --filter api test:e2e",
+    "migration:api:generate": "pnpm --filter api migration:generate",
+    "migration:api:run": "pnpm --filter api migration:run",
+    "openapi:generate": "pnpm --filter api openapi:generate",
+    "--- web ---": "",
+    "dev:web": "pnpm --filter web dev",
+    "start:web": "pnpm --filter web start",
+    "build:web": "pnpm --filter web build",
+    "lint:web": "pnpm --filter web lint",
+    "format:web": "pnpm --filter web format",
+    "panda:web": "pnpm --filter web panda",
+    "api:types": "pnpm --filter web api:types",
+    "test:web": "pnpm --filter web test",
+    "test:web:ui": "pnpm --filter web test:ui",
+    "test:web:coverage": "pnpm --filter web test:coverage",
+    "test:web:e2e": "pnpm --filter web test:e2e",
+    "test:web:e2e:ui": "pnpm --filter web test:e2e:ui",
+    "storybook:web": "pnpm --filter web storybook",
+    "storybook:web:build": "pnpm --filter web build-storybook"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.2.0",
+    "@storybook/nextjs": "10.1.5",
+    "typescript": "^5"
+  }
+}
